@@ -1,0 +1,7 @@
+.screen-header{
+/*   background-color: tomato; */
+  padding:10px 20px;
+}
+.screen-header__icons i{
+  margin-left:10px;
+}

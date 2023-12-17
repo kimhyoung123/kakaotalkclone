@@ -1,0 +1,14 @@
+
+/* 변수 */
+
+:root{
+  --main-txt-color:rgba(0,0,0,0.9);
+  --sub-txt-color:rgba(0,0,0,0.4);
+  --kakao-color: #ffe812;
+
+  
+  --border-color:#666666;
+  --main-border:1px solid var(--border-color);
+
+  --kakao-nav-color:#f9f9fa;
+}

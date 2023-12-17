@@ -1,0 +1,234 @@
+
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/screen-header.css";
+@import "components/nav.css";
+@import "components/advertising.css";
+@import "components/user.css";
+@import "components/badge.css";
+
+/* Screens */
+@import "screens/index.css";
+@import "screens/friends.css";
+@import "screens/view.css";
+@import "screens/chats.css";
+@import "screens/shopping.css";
+@import "screens/more.css";
+
+
+
+/* body */
+body{
+font-family: 'Jua', sans-serif;
+/* padding:20px; */
+}
+
+/* TEXT */
+h1{font-size:xx-large;
+  color:var(--main-txt-color);}
+h2{font-size:x-large;
+  color:var(--main-txt-color);}
+h3{font-size:x-large;
+  color:var(--sub-txt-color);}
+h4{font-size:large;
+  color:var(--main-txt-color);}
+h5{font-size:large;
+  color:var(--sub-txt-color);}
+h6{font-size:medium;color:var(--main-txt-color);}
+p{font-size:medium;
+  color:var(--sub-txt-color);}
+
+/* Flexbox  */
+.flex_frequently{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.flex_change_axis{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+
+.flex_start{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_end{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content:center;
+}
+
+
+/* 메인 */
+main{
+  height: 500vh;
+  margin-top:130px;
+  padding-inline:20px;
+}
+
+.status-bar_with_header{
+  position:fixed;
+  width: 100%;
+  top:0;
+  background-color: white;
+  z-index: 99;
+}
+
+/* padding and margin setting */
+.padding_20{
+  padding:20px;
+}
+.side_padding_20{
+  padding-inline:20px;
+}
+
+.bottom_margin_10{
+  margin-bottom:10px;
+}
+.right_margin_10{
+  margin-right:10px;
+}
+
+.wallet-container {
+  background-color: rgb(248, 215, 0);
+  border-radius: 0px;
+  padding: 20px;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-header h1 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.header-info {
+  font-size: 14px;
+  float: right;
+}
+
+.header-info {
+  font-size: 14px;
+  float: right;
+}
+
+.wallet-content {
+  background-color: rgb(255, 248, 190);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.wallet-notification {
+  background-color: rgb(255, 248, 190);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.wallet-pay {
+  background-color: rgb(248, 215, 0);
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.notification-text {
+  font-size: 16px;
+  color: black;
+}
+
+.pay-icon {
+  font-weight: bold;
+}
+
+.pay-text {
+  float: left;
+  font-size: 16px;
+  color: black;
+}
+
+.pay-amount {
+  float: right;
+  font-size: 16px;
+  color: black;
+}
+
+.wallet-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallet-footer-left,
+.wallet-footer-right {
+  display: flex;
+}
+
+.wallet-footer-right {
+  margin-left: auto;
+}
+
+.wallet-footer span {
+  font-size: 16px;
+  color: black;
+}
+
+.icon-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px; 
+  padding: 20px; 
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 10px; 
+}
+
+
+.icon-heart:before {
+  content: "\f004"; 
+}
+
+.icon-shopping-cart:before {
+  content: "\f07a"; 
+}
+
+.icon-with-notification {
+  position: relative;
+  display: inline-block; 
+}
+
+.notification-dot {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 13px; 
+  height: 13px; 
+  background-color: red; 
+  border-radius: 50%; 
+  border: 2px solid red; 
+}
